@@ -1,0 +1,59 @@
+# Fichiers et répertoires Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+
+# Dossiers de l'environnement virtuel
+env/
+venv/
+ENV/
+ENV*/
+.venv/
+.venv*/
+
+# Dossiers de l'environnement IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers de configuration système
+.DS_Store
+Thumbs.db
+
+# Fichiers de migration de la base de données
+*.sqlite3
+*.db
+
+# Fichiers générés par Django
+/staticfiles/
+/media/
+/local_settings.py
+
+# Fichiers et répertoires spécifiques à Django
+*.log
+*.pot
+*.mo
+
+# Fichiers de debug
+debug.log
+
+# Fichiers d'extensions
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Node modules (si vous utilisez npm pour gérer des paquets front-end)
+node_modules/
+
+# Configurations locales spécifiques (à modifier selon vos besoins)
+config/settings/local.py
+config/settings/*.local
+
+# Si vous utilisez Docker
+docker-compose.override.yml
+docker-compose.local.yml

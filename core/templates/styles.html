@@ -1,0 +1,165 @@
+{% extends "layout.html" %}
+{% block title %}
+    Styles
+{% endblock %}
+{% block content %}
+    <div class="uk-section uk-margin uk-margin-medium-left uk-margin-medium-right">
+        <!-- Typography -->
+        <h2>Typography</h2>
+        <p class="uk-text-lead">This is a lead paragraph to showcase the primary text style.</p>
+        <p>This is a standard paragraph demonstrating the base font size and line height.</p>
+        <blockquote cite="#" class="uk-margin">This is a blockquote, which is used to represent a section that is quoted
+            from another source.
+        </blockquote>
+        <p><strong>Bold text</strong> and <em>italic text</em> within a paragraph.</p>
+
+        <h3>Headings</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <hr class="uk-divider-icon">
+
+        <!-- Buttons -->
+        <h2>Buttons</h2>
+        <button class="uk-button uk-button-default">Default</button>
+        <button class="uk-button uk-button-primary">Primary</button>
+        <button class="uk-button uk-button-secondary">Secondary</button>
+        <button class="uk-button uk-button-danger">Danger</button>
+
+        <hr class="uk-divider-icon">
+
+        <!-- Form Elements -->
+        <h2>Form Elements</h2>
+        <form>
+            <fieldset class="uk-fieldset">
+
+                <legend class="uk-legend">Input Fields</legend>
+
+                <div class="uk-margin">
+                    <input class="uk-input" type="text" placeholder="Text Input">
+                </div>
+
+                <div class="uk-margin">
+                    <input class="uk-input uk-form-large" type="text" placeholder="Large Text Input">
+                </div>
+
+                <div class="uk-margin">
+                    <input class="uk-input uk-form-small" type="text" placeholder="Small Text Input">
+                </div>
+
+                <div class="uk-margin">
+                    <textarea class="uk-textarea" rows="5" placeholder="Textarea"></textarea>
+                </div>
+
+                <div class="uk-margin">
+                    <select class="uk-select">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                    </select>
+                </div>
+
+                <div class="uk-margin">
+                    <input class="uk-checkbox" type="checkbox"> Checkbox
+                </div>
+
+                <div class="uk-margin">
+                    <input class="uk-radio" type="radio" name="radio1"> Radio
+                </div>
+
+                <div class="uk-margin">
+                    <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+                </div>
+
+            </fieldset>
+        </form>
+
+        <hr class="uk-divider-icon">
+
+        <!-- Tables -->
+        <h2>Tables</h2>
+        <table class="uk-table uk-table-divider uk-table-hover uk-table-striped">
+            <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Row 1 Col 1</td>
+                <td>Row 1 Col 2</td>
+                <td>Row 1 Col 3</td>
+            </tr>
+            <tr>
+                <td>Row 2 Col 1</td>
+                <td>Row 2 Col 2</td>
+                <td>Row 2 Col 3</td>
+            </tr>
+            <tr>
+                <td>Row 3 Col 1</td>
+                <td>Row 3 Col 2</td>
+                <td>Row 3 Col 3</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr class="uk-divider-icon">
+
+        <!-- Cards -->
+        <h2>Cards</h2>
+        <div class="uk-card uk-card-default uk-card-body uk-margin">
+            <h3 class="uk-card-title">Default Card</h3>
+            <p>This is a simple card with a title and some content.</p>
+        </div>
+
+        <div class="uk-card uk-card-primary uk-card-body uk-margin">
+            <h3 class="uk-card-title">Primary Card</h3>
+            <p>This card uses the primary color scheme.</p>
+        </div>
+
+        <div class="uk-card uk-card-secondary uk-card-body uk-margin">
+            <h3 class="uk-card-title">Secondary Card</h3>
+            <p>This card uses the secondary color scheme.</p>
+        </div>
+
+        <div class="uk-card uk-card-hover uk-card-body uk-margin">
+            <h3 class="uk-card-title">Hover Card</h3>
+            <p>This card has a hover effect.</p>
+        </div>
+
+        <hr class="uk-divider-icon">
+
+        <!-- Icons -->
+        <h2>Icons</h2>
+        <span uk-icon="home"></span>
+        <span uk-icon="heart"></span>
+        <span uk-icon="star"></span>
+
+        <hr class="uk-divider-icon">
+
+        <!-- Alerts -->
+        <h2>Alerts</h2>
+        <div class="uk-alert-primary" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>This is a primary alert—check it out!</p>
+        </div>
+        <div class="uk-alert-success" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>This is a success alert—check it out!</p>
+        </div>
+        <div class="uk-alert-warning" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>This is a warning alert—check it out!</p>
+        </div>
+        <div class="uk-alert-danger" uk-alert>
+            <a class="uk-alert-close" uk-close></a>
+            <p>This is a danger alert—check it out!</p>
+        </div>
+    </div>
+
+{% endblock %}
