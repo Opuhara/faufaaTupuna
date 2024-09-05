@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css">
 </head>
 <body>
-{% include 'menu.html' %}
-<div>
+    {% include 'menu.html' %}
+    <section class="uk-section-muted">
+    <div class="uk-container uk-box-shadow-medium uk-margin-small uk-padding-small">
     {% block content %}{% endblock %}
-</div>
+    </div>
+    </section>
 <script src="{% static 'js/uikit.min.js' %}"></script>
 <script src="{% static 'js/uikit-icons.min.js' %}"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

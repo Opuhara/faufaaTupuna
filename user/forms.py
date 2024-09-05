@@ -31,3 +31,20 @@ class AppUserSignUpForm(UserCreationForm):
 		if commit:
 			user.save()
 		return user
+
+
+class AppUserProfileForm(forms.ModelForm):
+	class Meta:
+		model = AppUser
+		fields = ['first_name', 'last_name', 'email']  # Ajoute les champs de ton modèle
+
+	def __init__(self, *args, **kwargs):
+		super(AppUserProfileForm, self).__init__(*args, **kwargs)
+		for field_name, field in self.fields.items():
+			field.widget.attrs.update({
+				'class': 'uk-input'
+			})
+		self.fields['email'].widget.attrs.update({
+			'class': 'uk-input uk-form-danger',
+			'placeholder': 'Email'
+		})
